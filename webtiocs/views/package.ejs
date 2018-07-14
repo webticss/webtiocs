@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]><html class="ie ie9 no-js" lang="en"><![endif]-->
+<!--[if gt IE 9 | !IE]><!-->
+<html class="js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths desktop landscape is-desktop sr is-scrolled" style="" lang="en"><!--<![endif]--><head>
+<% include partials/head %>
+<link rel="stylesheet" href="webtios/package/package.css"/>
+<link rel="stylesheet" href="webtios/package.css"/>
+<script src="webtios/package.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<!--<script>$(document).ready(function() {
+$('a.login-window').click(function() {
+
+            //Getting the variable's value from a link
+    var loginBox = $(this).attr('href');
+
+    //Fade in the Popup
+    $(loginBox).fadeIn(300);
+
+    //Set the center alignment padding + border see css style
+    var popMargTop = ($(loginBox).height() + 24) / 2;
+    var popMargLeft = ($(loginBox).width() + 24) / 2;
+
+    $(loginBox).css({
+        'margin-top' : -popMargTop,
+        'margin-left' : -popMargLeft
+    });
+
+    // Add the mask to body
+    $('body').append('<div id="mask"></div>');
+    $('#mask').fadeIn(300);
+
+    return false;
+});
+
+// When clicking on the button close or the mask layer the popup closed
+$('a.close, #mask').live('click', function() {
+  $('#mask , .login-popup').fadeOut(300 , function() {
+    $('#mask').remove();
+});
+return false;
+});
+});
+</script>-->
+</head>
+
+<body>
+  <% include partials/btop %>
+  <% include partials/social %>
+
+  <header id="siteHeader" class="site-header site-header-fixed-top">
+    <nav id="siteNavbar" class="navbar navbar-default navbar-fixed-top site-navbar-from-light-fg">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle-icon navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+
+            <span class="sr-only">Toggle navigation</span>
+            <span"><img src="webtios/paper-plane.png" ></span>
+          </button>
+
+          <a class="navbar-brand" href="http://webtios.com/">
+            <img class="navbar-brand-media-light" src="webtios/wetios white.png" alt="">
+            <img class="navbar-brand-media-dark" src="webtios/webtios.png" alt="">
+          </a>
+        </div> <!-- .navbar-header -->
+
+        <div class="collapse navbar-collapse" id="navbar-collapse" style="max-height: 576px;">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a data-smooth-scroll="false" href="/">Home</a></li>
+            <li><a data-smooth-scroll="false" href="/about">About Us</a></li>
+            <li class="glow3"><a data-smooth-scroll="false" href="/career">Careers</a></li>
+             <!--<li><a data-smooth-scroll="false" href="about/partners">Be a Partner</a></li>
+             <li><a data-smooth-scroll="false" href="http://www.webtios.com/">Services</a></li>-->
+
+      <li><a data-smooth-scroll="false" href="/Contact"><button class="btn btn-success">Contact</button></a></li>
+      <li><a data-smooth-scroll="false" href="/service"><button class="btn btn-primary">Services</button></a></li>
+      <li><a data-smooth-scroll="false" href="https://www.payumoney.com/paybypayumoney/#/22792948493A2A94FA9BB5E00F1DB1FF"><button class="btn btn-primary" style="background-color: black;">PAY&nbsp&nbsp<img src="webtios/pay.png" height="20px" width="20px" alt=""></button></a></li>
+        </ul>
+        </div> <!-- .navbar-collapse -->
+      </div>
+    </nav>
+
+  </header> <!-- .site-header -->
+<div class="main">
+    <div id="home" class="home-section home-hero align-outer bg-theme-1" style="height: 664px;">
+
+      <div id="homeBgSlideshow" style="height: 600px;" class="vegas-container"><div class="vegas-slide vegas-transition-fade vegas-transition-fade-in vegas-transition-fade-out" style="transition: all 1000ms ease 0s;"><div class="vegas-slide-inner" style="background-image: url(&quot;webtios/img/Webservice.png&quot;); background-color: rgba(0, 0, 0, 0); background-position: center center; background-size: cover;"></div></div><div class="vegas-slide vegas-transition-fade vegas-transition-fade-in" style="transition: all 1000ms ease 0s;"><div class="vegas-slide-inner" style="background-image: url(&quot;webtios/img/Webservice.png&quot;); background-color: rgba(0, 0, 0, 0); background-position: center center; background-size: cover;"></div></div><div class="vegas-timer vegas-timer-running"><div class="vegas-timer-progress" style="transition-duration: 1000ms;"></div></div><div class="vegas-wrapper" style="overflow: visible; padding: 0px;"></div></div> <!-- #homeBgSlideshow -->
+
+      <div id="homeBgOverlay" class="bg-black" data-opacity=".5" style="opacity: 0.5;"></div> <!-- #homeBgOverlay -->
+
+      <div id="homeBgParticle" data-opacity="1" style="opacity: 1;"><canvas class="particles-js-canvas-el" style="width: 100%; height: 100%;" width="1349" height="600"></canvas></div> <!--- #homeBgParticle -->
+
+      <div class="align-inner align-middle">
+        <div class="container">
+          <div class="home-row row">
+            <div class="home-left-col col-sm-6">
+           <h1 class="text-animate section-title" style="font-size: 56px; font-weight: bold;" >OUR PACKAGES...</h1>
+
+              <p class="text-lead wow fadeInUp" style="visibility: visible; animation-name: fadeInUp; font-size: 20px;">Don't save what is left after spending, <br>but spend what is left after saving. <br><strong>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp-Warren Buffett</strong></p>
+              <p class="text-lead wow fadeInUp" style="visibility: visible; animation-name: fadeInUp; font-size: 20px;"></p>
+
+              <div class="btn-wrap">
+<a class="btn btn-lg btn-theme-2 wow bounceIn" data-wow-delay=".2s" href="/contact" style="visibility: visible; animation-delay: 0.2s; animation-name: bounceIn;">Contact us&nbsp&nbsp <i class="fas fa-phone"></i></a>
+                <a class="btn btn-lg btn-theme-1 wow bounceIn" data-wow-delay=".2s" href="/quote" style="visibility: visible; animation-delay: 0.2s; animation-name: bounceIn;">Quote Us&nbsp&nbsp <i class="fas fa-envelope-open"></i></a>
+
+         </div>
+            </div> <!-- .home-left-col -->
+
+            <div class="home-form-col col-sm-6 col-md-5 col-md-offset-1 col-lg-4 col-lg-offset-2">
+
+
+            </div> <!-- .home-form-col -->
+          </div>
+        </div>
+      </div>
+    </div> <!-- #home-->
+    <div class="comparison">
+
+  <table>
+    <thead>
+      <tr>
+        <th class="tl tl2"></th>
+        <th class="qbse">
+          Start-up & Enterpreneur
+        </th>
+        <th colspan="3" class="qbo">
+           Businesses that need webapp, CRM or informative website
+        </th>
+      </tr>
+      <tr>
+        <th class="tl"></th>
+        <th class="compare-heading glow">
+          Start-Up
+        </th>
+        <th class="compare-heading">
+          Basic
+        </th>
+        <th class="compare-heading">
+          E-commerce
+        </th>
+        <th class="compare-heading">
+          CRM
+        </th>
+      </tr>
+      <tr>
+        <th></th>
+        <th class="price-info">
+          <div class="price-was"></div>
+          <div class="price-now" style="margin-top:15px;"><a href="/terms"><span class="price-small">Terms and Condition applied</span></a></div>
+          <div><a href="/contact" class="price-buy">Contact<span class="hide-mobile">US</span></a></div>
+          <div class="price-try"><span class="hide-mobile">call us</span><a href="tel:+91-9113161883"> +91-9113161883 </a></div>
+        </th>
+        <th class="price-info">
+          <div class="price-was">Was ₹7000</div>
+          <div class="price-now"><span>₹5000</span> /year</div>
+          <div><a href="https://www.payumoney.com/paybypayumoney/#/22792948493A2A94FA9BB5E00F1DB1FF" class="price-buy">Buy <span class="hide-mobile">Now</span></a></div>
+          <div class="price-try"><span class="hide-mobile"></span><a href="/contact">contact us </a></div>
+          </th>
+        <th class="price-info">
+          <div class="price-was">Was ₹45000</div>
+          <div class="price-now"><span>₹30000</span> /year</div>
+          <div><a href="https://www.payumoney.com/paybypayumoney/#/22792948493A2A94FA9BB5E00F1DB1FF" class="price-buy">Buy <span class="hide-mobile">Now</span></a></div>
+          <div class="price-try"><span class="hide-mobile"></span><a href="/contact">or contact us </a></div>
+          </th>
+        <th class="price-info">
+          <div><a href="/contact" class="login-window">Schedule a Meeting</a></div>
+          <div class="price-now"><span>₹3000</span> /one time </div>
+          <div><a href="https://www.payumoney.com/paybypayumoney/#/22792948493A2A94FA9BB5E00F1DB1FF" class="price-buy">Pay <span class="hide-mobile">Now</span></a></div>
+          <div class="price-try"><span class="hide-mobile">or call us</span><a href="tel:+91-8676012194"> +91-8676012194 </a></div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td></td>
+          <td colspan="4">Free Domain</td>
+        </tr>
+        <tr class="compare-row">
+          <td>Free Domain</td>
+          <td><span class="tickblue">✔</span></td>
+          <td></td>
+          <td><span class="tickgreen">✔</span></td>
+          <td><span class="tickgreen">✔</span></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td colspan="4">Free Hosting</td>
+        </tr>
+        <tr>
+          <td>Free Hosting</td>
+          <td><span class="tickblue">✔</span></td>
+          <td class="tickgreen">6 month</td>
+          <td class="tickgreen">12 month</td>
+          <td class="tickgreen">18 month</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td colspan="4">On-site Project discussion</td>
+        </tr>
+        <tr class="compare-row">
+          <td>On-site Project discussion</td>
+          <td><span class="tickblue">✔</span></td>
+          <td></td>
+          <td></td>
+          <td><span class="tickgreen">✔</span></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td colspan="4">Dynamic pages</td>
+        </tr>
+        <tr>
+          <td>Dynamic pages</td>
+          <td><span class="tickblue">✔</span></td>
+          <td></td>
+          <td><span class="tickgreen">✔</span></td>
+          <td><span class="tickgreen">✔</span></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td colspan="4">Storage</td>
+        </tr>
+        <tr class="compare-row">
+          <td>Storage</td>
+          <td class="tickgreen">UL</td>
+          <td class="tickgreen">1GB</td>
+          <td class="tickgreen">UL</td>
+          <td class="tickgreen">UL</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td colspan="4">Bandwidth</td>
+        </tr>
+        <tr>
+          <td>Bandwidth</td>
+          <td class="tickgreen">UL</td>
+          <td class="tickgreen">1TB</td>
+          <td class="tickgreen">2TB</td>
+          <td class="tickgreen">UL</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td colspan="4">Free Email account</td>
+        </tr>
+        <tr class="compare-row">
+          <td>Free Email account</td>
+          <td class="tickgreen">1</td>
+          <td class="tickgreen">1</td>
+          <td class="tickgreen">10</td>
+          <td class="tickgreen">25</td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td colspan="4">SEO</td>
+        </tr>
+        <tr>
+          <td>SEO</td>
+          <td><span class="tickblue">✔</span></td>
+          <td><span class="tickgreen">✔</span></td>
+          <td><span class="tickgreen">✔</span></td>
+          <td><span class="tickgreen">✔</span></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td colspan="4">Payment gateway setup</td>
+        </tr>
+        <tr class="compare-row">
+          <td>Payment gateway setup</td>
+          <td><span class="tickblue">✔</span></td>
+          <td></td>
+          <td><span class="tickgreen">✔</span></td>
+          <td><span class="tickgreen">✔</span></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td colspan="4">Website security and backup</td>
+        </tr>
+        <tr>
+          <td>Website security and backup</td>
+          <td><span class="tickblue">✔</span></td>
+          <td></td>
+          <td><span class="tickgreen">✔</span></td>
+          <td><span class="tickgreen">✔</span></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td colspan="4">Dashboard</td>
+        </tr>
+        <tr class="compare-row">
+          <td>Dashboard</td>
+          <td><span class="tickblue">✔</span></td>
+          <td></td>
+          <td><span class="tickgreen">✔</span></td>
+          <td><span class="tickgreen">✔</span></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td colspan="4">Email support</td>
+        </tr>
+        <tr>
+          <td>Email support</td>
+          <td><span class="tickblue">✔</span></td>
+          <td><span class="tickgreen">✔</span></td>
+          <td><span class="tickgreen">✔</span></td>
+          <td><span class="tickgreen">✔</span></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td colspan="4">Call support</td>
+        </tr>
+        <tr class="compare-row">
+          <td>Call support</td>
+          <td><span class="tickblue">✔</span></td>
+          <td></td>
+          <td><span class="tickgreen">✔</span></td>
+          <td><span class="tickgreen">✔</span></td>
+        </tr>
+        <tr>
+          <td>&nbsp;</td>
+          <td colspan="4">Pay in installment</td>
+        </tr>
+        <tr>
+          <td>Pay in installment</td>
+          <td><span class="tickblue">✔</span></td>
+          <td></td>
+          <td><span class="tickgreen">✔</span></td>
+          <td><span class="tickgreen">✔</span></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+           
+          <!-- <div id="login-box" class="login-popup">
+           <a href="/package" class="close"><img src="webtios/img/close-icon.png" class="btn_close" height="20px" width="auto" title="Close Window" alt="Close" /></a>
+             <form  class="signin" action="/Meeting" method="post">
+                   <fieldset class="textbox">
+                   <label class="username">
+                   <span>Full Name</span>
+                   <input  name="username" value="" type="text" placeholder="Full Name">
+                   </label>
+                   <label class="username">
+                   <span>Email</span>
+                   <input  name="useremail" value="" type="email" placeholder="Email">
+                   </label>
+                   <label class="username">
+                   <span>Phone</span>
+                   <input  name="userphone" value="" type="text" placeholder="Phone">
+                   </label>
+                  <label class="username">
+                   <span>When We Talk</span>
+                   <input  name="username" value="" type="text" placeholder="00:00 AM/PM DD/MM/YYYY">
+                 </label>
+                   <label class="username">
+                   <span>Your Querry</span>
+                   <textarea id="username" name="usermsg" placeholder="Your text here."></textarea>
+</label>
+                   <button class="submit button popbutton" type="button">Pay Now</button>
+                   <p>
+                   <a class="forgot" href="/terms">Terms and Condition...</a>
+                   </p>
+                   </fieldset>
+             </form>
+           </div>-->
+ <% include partials/footer %>
+</div><% include partials/jivo %>
+</body>
+</html>

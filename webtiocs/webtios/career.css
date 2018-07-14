@@ -1,0 +1,114 @@
+.glow {
+     -webkit-animation-duration: 1s;
+     -webkit-animation-name: glow;
+     -webkit-animation-direction: alternate;
+     -webkit-animation-iteration-count: infinite;
+     animation-duration: 1s;
+     animation-name: glow;
+     animation-direction: alternate;
+     animation-iteration-count: infinite;
+
+ }
+
+ @-webkit-keyframes glow {
+     from { text-shadow: 0 0 0px red; }
+     to { text-shadow: 0 0 20px red; }
+ }
+
+ .glow1 {
+      -webkit-animation-duration: 1s;
+      -webkit-animation-name: glow1;
+      -webkit-animation-direction: alternate;
+      -webkit-animation-iteration-count: infinite;
+      animation-duration: 1s;
+      animation-name: glow1;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+
+  }
+
+  @-webkit-keyframes glow1 {
+      from { text-shadow: 0 0 0px #00FFFF; }
+      to { text-shadow: 0 0 20px #00FFFF; }
+  }
+  .glow2 {
+       -webkit-animation-duration: 1s;
+       -webkit-animation-name: glow2;
+       -webkit-animation-direction: alternate;
+       -webkit-animation-iteration-count: infinite;
+       animation-duration: 1s;
+       animation-name: glow2;
+       animation-direction: alternate;
+       animation-iteration-count: infinite;
+
+   }
+
+   @-webkit-keyframes glow2 {
+       from { text-shadow: 0 0 0px #00ced1; }
+       to { text-shadow: 0 0 20px #00ced1; }
+   }
+
+
+@keyframes flickerAnimation {
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-o-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes flickerAnimation{
+  0%   { opacity:1; }
+  50%  { opacity:0; }
+  100% { opacity:1; }
+}
+.glow3 {
+   -webkit-animation: flickerAnimation .5s infinite;
+   -moz-animation: flickerAnimation .5s infinite;
+   -o-animation: flickerAnimation .5s infinite;
+    animation: flickerAnimation .5s infinite;
+}
+    }
+
+   hr{
+    background: #a59e9f;
+    background: -webkit-linear-gradient(#a59e9f, #494946);
+    background: -o-linear-gradient(#a59e9f, #494946);
+    background: -moz-linear-gradient(#a59e9f, #494946);
+    background: linear-gradient(#a59e9f, #494946);
+}
+.card {
+
+    position: relative;
+    display: inline-block;
+
+}
+.card .img-top {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.card:hover .img-top {
+    display: inline;
+}
+/*jssor slider loading skin spin css*/
+.jssorl-009-spin img {
+    animation-name: jssorl-009-spin;
+    animation-duration: 1.6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes jssorl-009-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}

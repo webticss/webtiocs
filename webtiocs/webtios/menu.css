@@ -1,0 +1,25 @@
+#contain ul {
+  list-style: none;
+}
+
+#contain ul li{
+  background-color: blue;
+  width: 50px;
+  border: 1px solid white;
+  height: 50px;
+  line-height: 50px;
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+#contain ul li:hover{
+  background-color: black;
+}
+
+#contain ul ul{
+  display: none;
+}
+#container ul li:hover{
+  display: block;
+}
