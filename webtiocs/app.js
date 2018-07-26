@@ -134,7 +134,7 @@ app.post('/sign_up' ,function(req,res){
 											 </tr>\n\
 											 </table> </body></html>";
 	let mailOptions = {
-			from: '"Webtios" <webtioshost@gmail.com>', // sender address
+			from: '"shubham saurav" <webtioshost@gmail.com>', // sender address
 			to: req.body.email, // list of receivers
 			subject: "Webtios Enquiry", // Subject line
 			text: req.body.phone, // plain text body
@@ -214,7 +214,7 @@ app.post('/Submit' ,function(req,res){
 											 </tr>\n\
 											 </table></body></html>";
 	let mailOptions = {
-			from: '"Webtios" <webtioshost@gmail.com>', // sender address
+			from: '"shubham saurav" <webtioshost@gmail.com>', // sender address
 			to: req.body.user_email, // list of receivers
 			subject: "Webtios Enquiry", // Subject line
 			text: req.body.phone, // plain text body
