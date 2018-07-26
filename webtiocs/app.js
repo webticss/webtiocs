@@ -98,8 +98,8 @@ app.post('/sign_up' ,function(req,res){
 			port: 465,
 			secure: true,
 			auth: {
-					user: 'saurav56342@gmail.com',
-					pass: '@victory1'
+					user: 'webtioshost@gmail.com',
+					pass: 'Pro_231678'
 			}
 	});
 	var mailoutput = "<html>\n\
@@ -134,7 +134,7 @@ app.post('/sign_up' ,function(req,res){
 											 </tr>\n\
 											 </table> </body></html>";
 	let mailOptions = {
-			from: '"shubham saurav" <saurav56342@gmail.com>', // sender address
+			from: '"Webtios" <webtioshost@gmail.com>', // sender address
 			to: req.body.email, // list of receivers
 			subject: "Webtios Enquiry", // Subject line
 			text: req.body.phone, // plain text body
@@ -190,8 +190,8 @@ app.post('/Submit' ,function(req,res){
 			port: 465,
 			secure: true,
 			auth: {
-					user: 'saurav56342@gmail.com',
-					pass: '@victory1'
+					user: 'webtioshost@gmail.com',
+					pass: 'Pro_231678'
 			}
 	});
 	var mailoutput = "<html>\n\
@@ -209,10 +209,13 @@ app.post('/Submit' ,function(req,res){
 											 <tr>\n\
 											 <td>Messge: </td>" + req.body.user_bio + "<td></td>\n\
 											 </tr>\n\
+											 <tr>\n\
+											 <td><h1><b><u>Thanqyou to contact us.</u></b></h1><h3>As per your details we will contact you within two business day.<h3></td>\n\
+											 </tr>\n\
 											 </table></body></html>";
 	let mailOptions = {
-			from: '"shubham saurav" <saurav56342@gmail.com>', // sender address
-			to: '<prateekverma999@gmail.com>', // list of receivers
+			from: '"Webtios" <webtioshost@gmail.com>', // sender address
+			to: req.body.user_email, // list of receivers
 			subject: "Webtios Enquiry", // Subject line
 			text: req.body.phone, // plain text body
 			html: mailoutput // html body
